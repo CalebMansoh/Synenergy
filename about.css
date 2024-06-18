@@ -1,0 +1,90 @@
+/* Define basic styles and primary colors */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.about-section {
+    background-color: #ffffff;
+    padding: 50px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    color: #2e7d32;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about-content {
+    background-color: #f9f9f9;
+    margin: 20px 0;
+    padding: 20px;
+    border-left: 5px solid #2e7d32;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.about-content h2 {
+    color: #2e7d32;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.about-content p, .about-content ul {
+    color: #555;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.about-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-content ul li {
+    background: url('bullet.png') no-repeat left center;
+    background-size: 10px 10px;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.about-content ul li strong {
+    color: #2e7d32;
+}
+
+.about-content ul li::marker {
+    color: #777;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
+
+/* Adding subtle transitions for a modern feel */
+.about-content, h1, h2 {
+    transition: all 0.3s ease;
+}
+
+.about-content:hover {
+    background-color: #e8f5e9;
+    border-left-color: #1b5e20;
+}
+
+.nav-text {
+    margin-left: 20px;
+    font-size: 18px;
+    color: #ffffff;
+}

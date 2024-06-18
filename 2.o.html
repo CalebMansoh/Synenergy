@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GREEN SYNERGY COMPANY LIMITED</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="soap/IMG_8522.png" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <div class="navbar">
+            <div class="navbar-container">
+                <div class="logo">
+                    <img src="soap/IMG_8522.png" alt="Logo">
+                </div>
+                <div class="nav-text">
+                  <p style="text-align: center;">  GREEN <BR>SYNERGY CO.LTD.<BR></p>
+              </div>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="services.html">Services</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <b><h3 class="featured-products">Featured Products</h3></b>
+
+    <main class="main-content">
+        <section class="products-section" id="products">
+            <div class="product">
+                <img src="soap\new.png" alt="Product 1" class="product-img">
+                <h2 class="product-title">Green</h2>
+                <p class="product-description">Description of Product 1</p>
+                <p class="product-price">$10.00</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="soap/new.png" alt="Product 2" class="product-img">
+                <h2 class="product-title">RUBY RED</h2>
+                <p class="product-description">Description of Product 2</p>
+                <p class="product-price">$20.00</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="soap\newoil.png" alt="Product 3" class="product-img">
+                <h2 class="product-title">OIL</h2>
+                <p class="product-description">Description of Product 3</p>
+                <p class="product-price">$30.00</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy 2024 Green synergy company limited. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Get all the buy buttons
+        const buyButtons = document.querySelectorAll('.buy-button');
+
+        // Add click event listener to each button
+        buyButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Here, you can add your logic for what happens when a buy button is clicked
+                // For example, you could redirect the user to a checkout page or show a modal
+                console.log('Buy button clicked for product:', this.parentNode.querySelector('.product-title').textContent);
+            });
+        });
+    </script>
+</body>
+</html>
