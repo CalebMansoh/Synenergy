@@ -4,177 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GREEN SYNERGY COMPANY LIMITED</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./styles/index.css">
     <link rel="shortcut icon" href="soap/IMG_8522.png" type="image/x-icon">
 </head>
 <body>
-    
-    
-    <style>
-        /* CSS Styles */
-        body {
-          margin: 0;
-          font-family: Arial, sans-serif;
-        }
 
-        .navbar {
-          background: green;
-          overflow: hidden;
-          display: flex;
-          align-items: center;
-          padding: 0 20px;
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .navbar-container {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          width: 100%;
-        }
-
-        .logo img {
-          height: 50px;
-        }
-
-        .nav-links {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-grow: 1;
-        }
-
-        .nav-links a {
-          color: white;
-          text-align: center;
-          padding: 14px 20px;
-          text-decoration: none;
-          transition: background-color 0.3s;
-          border-radius: 5px;
-          margin: 0 10px;
-          position: relative;
-        }
-
-        .nav-links a:hover {
-          background-color: rgba(255, 255, 255, 0.2);
-        }
-
-        .nav-links a::after {
-          content: '';
-          position: absolute;
-          bottom: 0;
-          left: 50%;
-          width: 0;
-          height: 2px;
-          background-color: white;
-          transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
-        }
-
-        .nav-links a:hover::after {
-          width: 100%;
-          left: 0;
-        }
-
-        @keyframes slideIn {
-          from {
-            transform: translateY(-100%);
-          }
-          to {
-            transform: translateY(0);
-          }
-        }
-
-        @keyframes fadeIn {
-          from {
-            opacity: 0;
-          }
-          to {
-            opacity: 1;
-          }
-        }
-
-        @media (max-width: 768px) {
-          .navbar-container {
-            flex-direction: column;
-          }
-
-          .home-link{
-            display: none;
-          }
-
-          footer{
-           display: none;
-          }
-
-          .nav-links a {
-            animation: slideIn 0.5s forwards;
-          }
-        }
-    </style>
-    
-    
-    <header class="header">
-        <div class="navbar">
-            <div class="navbar-container">
-                <div class="logo">
-                    <img src="soap/IMG_8522.png" alt="Logo">
-                </div>
-                <div class="nav-text">
-                  <p style="text-align: center;" class="nav-p">  GREEN <BR>SYNERGY CO.LTD.<BR></p>
-              </div>
-                <div class="nav-links">
-                    <a href="index.html" class="home-link">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="services.html">Services</a>
-                    <a href="contact.html">Contact</a>
-                </div>
-            </div>
+  <header class="header">
+    <div class="navbar">
+      <div class="navbar-container">
+        <div class="logo">
+          <img src="soap/IMG_8522.png" alt="Logo">
         </div>
-    </header>
-    
+        <div class="nav-text">
+          <p style="text-align: center;" class="nav-p">  GREEN <BR>SYNERGY CO.LTD.<BR></p>
+        </div>
+        <div class="nav-links">
+          <a href="index.html" class="home-link">Home</a>
+          <a href="about.html" class="link">About</a>
+          <a href="services.html" class="link">Services</a>
+          <a href="contact.html" class="link">Contact</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  
 
-    <b><h3 class="featured-products">Featured Products</h3></b>
+  <b><h3 class="featured-products">Featured Products</h3></b>
 
-    <main class="main-content">
-        <section class="products-section" id="products">
-        
-          <div class="product">
-                <img src="soap\new.png" alt="Product 1" class="product-img">
-                <h2 class="product-title">Green</h2>
-                <p class="product-description">Description of Product 1</p>
-                <p class="product-price">$10.00</p>
-                <button class="buy-button">Buy Now</button>
-            </div>
-            <div class="product">
-                <img src="soap/new.png" alt="Product 2" class="product-img">
-                <h2 class="product-title">RUBY RED</h2>
-                <p class="product-description">Description of Product 2</p>
-                <p class="product-price">$20.00</p>
-                <button class="buy-button">Buy Now</button>
-            </div>
-            <div class="product">
-                <img src="soap\newoil.png" alt="Product 3" class="product-img">
-                <h2 class="product-title">OIL</h2>
-                <p class="product-description">Description of Product 3</p>
-                <p class="product-price">$30.00</p>
-                <button class="buy-button">Buy Now</button>
-            </div>
-        </section>
-    </main>
-    <script>
-        const navbar = document.getElementById('navbar');
-        document.addEventListener('click', function (event) {
-            const toggleButton = event.target.closest('.toggle-button');
-            if (toggleButton) {
-                navbar.classList.toggle('show');
-            }
-        });
-    </script>
-   
-   
-    
-    <footer class="footer">
-        <p>&copy 2024 Green synergy company limited. All rights reserved.</p>
-    </footer>
+  <main class="main-content">
+    <section class="products-section" id="products">
+      
+      <div class="product1">
+        <img src="soap\new.png" alt="Product 1" class="product-img">
+        <h2 class="product-title">Green</h2>
+        <p class="product-description">Description of Product 1</p>
+        <p class="product-price">GH10.00</p>
+        <button class="buy-button">Buy Now</button>
+      </div>
+      <div class="product2">
+        <img src="soap/new.png" alt="Product 2" class="product-img">
+        <h2 class="product-title">RUBY RED</h2>
+        <p class="product-description">Description of Product 2</p>
+        <p class="product-price">GH20.00</p>
+        <button class="buy-button">Buy Now</button>
+      </div>
+      <div class="product3">
+        <img src="soap\newoil.png" alt="Product 3" class="product-img">
+        <h2 class="product-title">OIL</h2>
+        <p class="product-description">Description of Product 3</p>
+        <p class="product-price">GH30.00</p>
+        <button class="buy-button">Buy Now</button>
+      </div>
+    </section>
+  </main>
+  <!-- <script>
+    const navbar = document.getElementById('navbar');
+    document.addEventListener('click', function (event) {
+      const toggleButton = event.target.closest('.toggle-button');
+      if (toggleButton) {
+        navbar.classList.toggle('show');
+      }
+    });
+  </script> -->
+  
+  
+  
+  <footer class="footer">
+      <p>&copy 2024 Green synergy company limited. All rights reserved.</p>
+  </footer>
 </body>
 </html>

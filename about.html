@@ -1,193 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - GREEN SYNERGY COMPANY LIMITED</title>
-    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/main.css">
     <Link rel="shortcut icon" href="soap/IMG_8522.png" type="x/icon">
-      <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-
-</head>
-<body>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  </head>
+  <body>
     
     <header class="header">
-        <div class="navbar">
-            <div class="navbar-container">
-                <div class="logo">
-                    <img src="soap/IMG_8522.png" alt="Logo">
-                </div>
-                <div class="nav-text">
-                  <p style="text-align: center;">GREEN <BR>SYNERGY CO.LTD.<BR></p>
-              </div>
-                <div class="nav-links">
-                    <a href="index.html">Home</a>
-                    <a href="about.html" class="about-link">About</a>
-                    <a href="services.html">Services</a>
-                    <a href="contact.html">Contact</a>
-                </div>
-            </div>
+      <div class="navbar">
+        <div class="navbar-container">
+          <div class="logo">
+            <img src="soap/IMG_8522.png" alt="Logo">
+          </div>
+          <div class="nav-text">
+            <p style="text-align: center;">GREEN <BR>SYNERGY CO.LTD.<BR></p>
+          </div>
+          <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html" class="about-link">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+          </div>
         </div>
+      </div>
     </header>
   
     
-    <style>
-        /* CSS Styles */
-        body {
-          margin: 0;
-          font-family: Arial, sans-serif;
-        }
 
-        .navbar {
-          background: green;
-          overflow: hidden;
-          display: flex;
-          align-items: center;
-          padding: 0 20px;
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .navbar-container {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          width: 100%;
-        }
-
-        .logo img {
-          height: 50px;
-        }
-
-        .nav-links {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-grow: 1;
-        }
-
-        .nav-links a {
-          color: white;
-          text-align: center;
-          padding: 14px 20px;
-          text-decoration: none;
-          transition: background-color 0.3s;
-          border-radius: 5px;
-          margin: 0 10px;
-          position: relative;
-        }
-
-        .nav-links a:hover {
-          background-color: rgba(255, 255, 255, 0.2);
-        }
-
-        .nav-links a::after {
-          content: '';
-          position: absolute;
-          bottom: 0;
-          left: 50%;
-          width: 0;
-          height: 2px;
-          background-color: white;
-          transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
-        }
-
-        .nav-links a:hover::after {
-          width: 100%;
-          left: 0;
-        }
-
-        @keyframes slideIn {
-          from {
-            transform: translateY(-100%);
-          }
-          to {
-            transform: translateY(0);
-          }
-        }
-
-        @keyframes fadeIn {
-          from {
-            opacity: 0;
-          }
-          to {
-            opacity: 1;
-          }
-        }
-
-        @media (max-width: 768px) {
-          .navbar-container {
-            flex-direction: column;
-          }
-
-          .logo img, .nav-text p{
-            display: none;
-          }
-
-          .about-link{
-            display: none;
-          }
-
-          .nav-links a {
-            animation: slideIn 0.5s forwards;
-          }
-        }
-    </style>
     
     
     <section class="about-section">
-        <div class="container">
-            <h1>About Us</h1>
+      <div class="container">
+        <h1>About Us</h1>
 
-            <article class="about-content">
-                <h2>Our Mission</h2>
-                <p>At <strong><span style="color: green;">Green</span> Synergy Company Limited</strong>, our mission is to provide innovative solutions that enhance the way people live and work. We believe in integrity, excellence, and customer satisfaction and strive to bring these values into everything we do.</p>
-            </article>
+        <article class="about-content">
+          <h2>Our Mission</h2>
+          <p>At <strong><span style="color: green;">Green</span> Synergy Company Limited</strong>, our mission is to provide innovative solutions that enhance the way people live and work. We believe in integrity, excellence, and customer satisfaction and strive to bring these values into everything we do.</p>
+        </article>
 
-            <article class="about-content">
-                <h2>Our Story</h2>
-                <p>Founded in [Year], <strong><span style="color: green;">Green</span> synergy Company Limited</strong> started with a simple idea: [briefly describe the inception of your business]. From our humble beginnings in [founder's garage, small office, etc.], we have grown into a thriving company with a global presence. Our journey is marked by innovation, growth, and a commitment to our customers.</p>
-            </article>
+        <article class="about-content">
+          <h2>Our Story</h2>
+          <p>Founded in [Year], <strong><span style="color: green;">Green</span> synergy Company Limited</strong> started with a simple idea: [briefly describe the inception of your business]. From our humble beginnings in [founder's garage, small office, etc.], we have grown into a thriving company with a global presence. Our journey is marked by innovation, growth, and a commitment to our customers.</p>
+        </article>
 
-            <article class="about-content">
-                <h2>What We Do</h2>
-                <p><strong><span style="color: green;">Green</span> Synergy Company Limited</strong> specializes in [briefly describe your products/services]. Our offerings include:</p>
-                <ul>
-                    <li>Service/Product 1</li>
-                    <li>Service/Product 2</li>
-                    <li>Service/Product 3</li>
-                </ul>
-            </article>
+        <article class="about-content">
+          <h2>What We Do</h2>
+          <p><strong><span style="color: green;">Green</span> Synergy Company Limited</strong> specializes in [briefly describe your products/services]. Our offerings include:</p>
+          <ul>
+            <li>Service/Product 1</li>
+            <li>Service/Product 2</li>
+            <li>Service/Product 3</li>
+          </ul>
+        </article>
 
-            <article class="about-content">
-                <h2>Our Team</h2>
-                <p>Our team is made up of passionate professionals, industry experts, and creative thinkers who are committed to making a difference. Meet some of our key team members:</p>
-                <ul>
-                    <li><strong>DAVID AKOTO</strong>, Head Of Operations - +233 540 76 9414</li>
-                    <li><strong>REBECCA AMANKWAAH</strong>, Head Of Finance - +233 554 52 8355</li>
-                    <li><strong>ADJEI FRANCIS </strong>, Project Manager - +233 543 27 5281</li>
-                </ul>
-            </article>
+        <article class="about-content">
+          <h2>Our Team</h2>
+          <p>Our team is made up of passionate professionals, industry experts, and creative thinkers who are committed to making a difference. Meet some of our key team members:</p>
+          <ul>
+            <li><strong>DAVID AKOTO</strong>, Head Of Operations - +233 540 76 9414</li>
+            <li><strong>REBECCA AMANKWAAH</strong>, Head Of Finance - +233 554 52 8355</li>
+            <li><strong>ADJEI FRANCIS </strong>, Project Manager - +233 543 27 5281</li>
+          </ul>
+        </article>
 
-            <article class="about-content">
-                <h2>Why Choose Us?</h2>
-                <p>Customers choose <strong><span style="color: green;">Green</span> Synergy Company Limited</strong> because:</p>
-                <ul>
-                    <li><strong>Experience:</strong> We bring years of industry expertise.</li>
-                    <li><strong>Quality:</strong> We stand behind our products/services with a satisfaction guarantee.</li>
-                    <li><strong>Customer Service:</strong> Our dedicated team is here to support you every step of the way.</li>
-                </ul>
-            </article>
+        <article class="about-content">
+          <h2>Why Choose Us?</h2>
+          <p>Customers choose <strong><span style="color: green;">Green</span> Synergy Company Limited</strong> because:</p>
+          <ul>
+            <li><strong>Experience:</strong> We bring years of industry expertise.</li>
+            <li><strong>Quality:</strong> We stand behind our products/services with a satisfaction guarantee.</li>
+            <li><strong>Customer Service:</strong> Our dedicated team is here to support you every step of the way.</li>
+          </ul>
+        </article>
 
-            <article class="about-content">
-                <h2>Contact Us</h2>
-                <p>We would love to hear from you! Whether you have a question, need support, or just want to say hello, feel free to reach out.</p>
-                <ul>
-                    <li><strong>Email:</strong> [your email address]</li>
-                    <li><strong>Phone:</strong> [your phone number]</li>
-                    <li><strong>Address:</strong> [your physical address]</li>
-                </ul>
-            </article>
-        </div>
+        <article class="about-content">
+          <h2>Contact Us</h2>
+          <p>We would love to hear from you! Whether you have a question, need support, or just want to say hello, feel free to reach out.</p>
+          <ul>
+            <li><strong>Email:</strong> [your email address]</li>
+            <li><strong>Phone:</strong> [your phone number]</li>
+            <li><strong>Address:</strong> [your physical address]</li>
+          </ul>
+        </article>
+      </div>
     </section>
-</body>
+  </body>
 </html>
